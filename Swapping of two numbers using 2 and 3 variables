@@ -1,0 +1,35 @@
+public class SwapNumbers {
+    public static void main(String[] args) {
+
+        int a = 5;
+        int b = 10;
+        int temp;
+
+        // Before swapping
+        System.out.println("Before Swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // Swapping using 3 variables
+        temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("\nAfter Swapping using 3 variables:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // Reset values
+        a = 5;
+        b = 10;
+
+        // Swapping using 2 variables
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("\nAfter Swapping using 2 variables:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
