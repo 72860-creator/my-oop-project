@@ -1,0 +1,22 @@
+public class FactorialExample {
+
+    // function to calculate factorial
+    public static int factorial(int num) {
+        int fact = 1;
+
+        for (int i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+
+        return fact;
+    }
+
+    public static void main(String[] args) {
+
+        int number = 5;  // change this number
+
+        int result = factorial(number);
+
+        System.out.println("Factorial of " + number + " is " + result);
+    }
+}
